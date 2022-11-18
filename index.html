@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>Menu dropdown Luiz Fernando</title>
+<head>
+    <meta charset='utf-8'>
+    <style>
+
+        * {
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+        }
+        nav{
+            
+            position: relative;
+            font-family: monospace;
+            float: left;
+            width: 100%;
+
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li{
+            background-color: #333;
+            display: block;
+            float: left;
+            padding: 1rem;
+            position: relative;
+            text-decoration: none;
+            transition-duration: 0.5s;
+        }
+
+        li a{
+            background-color: #333;
+            text-decoration: none;
+        }
+
+        li ul{
+            visibility: hidden;
+            opacity: 0;
+            min-width: 5rem;
+            position: absolute;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            left: 0;
+            display: none;
+            box-shadow: 0px 8px 16px  0px rgba(0,0,0,0.2);
+        }
+
+        li ul li{
+            clear: both;
+            width: 100%;
+        }
+
+        ul li:hover,
+        ul li:focus-within{
+            background-color: #4caf50;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+
+        }
+
+        a:hover{
+            color:#f00
+
+        }
+
+        /*Controla a exibição do dropdown*/
+
+        ul li:hover>ul,
+        ul li:focus-within>ul,
+        ul li ul:hover,
+        ul li ul:focus{
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+        
+         
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre Mim</a>
+                <ul>
+                    <li><a href="#">Meus Projetos</a></li>
+                    <li><a href="#">Meu Currículo</a></li>
+                    <li><a href="#">Meus Hobies</a></li>
+
+                </ul> </li>
+                <li><a href="#">Entre em contato</a><ul>
+                    <li><a href="#">Meus Projetos</a></li>
+                    <li><a href="#">Meu Currículo</a></li>
+                    <li><a href="#">Meus Hobies</a></li>
+
+                </ul></li>
+                <li><a href="#">Redes Sociais</a></li>
+        </ul>
+    </nav>
+    <h1>O começo de tudo é sempre o fim de alguma coisa...</h1>
+    <p>Nada do que foi será de novo do jeito que foi um dia.</p>
+    <p>Tempo Gasto: 1 hora aproximadamente.</p>
+    <p>Luiz Fernando Garcia Claudio.</p>
+    
+</body>
+
+</html>
+
